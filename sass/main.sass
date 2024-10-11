@@ -1,0 +1,116 @@
+@import '_variables.sass'
+@import '_media.sass'
+@import '_fonts.sass'
+body
+	font-family: "TT Lakes", sans-serif, serif
+
+section.sidebar
+	width: 320px
+	box-shadow: 15px 0 30px rgba(0, 0, 0, 0.15)
+	/* border: 1px solid black */
+.header
+	padding: 16px
+	&__list
+		display: flex
+		flex-direction: row
+		justify-content: start
+		align-items: center
+	&__btn
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		@include pink
+	&__list-item:first-child
+		padding-right: 17px
+	&__list-item:nth-child(2)
+		padding-right: 72px
+.navigation
+	padding: 24px
+	&__list
+		display: flex
+		flex-direction: column
+		justify-content: center
+		gap: 32px
+		position: relative
+	&__link
+		color: #1B1C21
+		font-size: 16px
+		font-weight: 500
+		line-height: 24px
+		@include linker
+	&__link--active
+		color: #7E7E82
+		font-size: 16px
+		font-weight: 500
+		line-height: 24px
+		@include linker
+	&__item
+		display: flex
+		justify-content: start
+		align-items: center
+	&__item--active
+		display: flex
+		justify-content: start
+		align-items: center
+	&__item--active:before
+		content: ''
+		position: absolute
+		left: -24px
+		display: inline-block
+		vertical-align: center
+		@include divider
+.footer
+	padding: 16px
+	&__list
+		display: flex
+		flex-direction: row
+		justify-content: start
+		align-items: center
+		padding-bottom: 16px
+	&__btn
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		@include pink
+	&__list-item
+		padding-right: 16px
+	&__list-item:last-child
+		padding-right: 0
+	&__contacts
+		padding-bottom: 40px
+	&__mail
+		font-size: 16px
+		font-weight: 500
+		line-height: 24px
+		color: #1B1C21
+		padding-bottom: 12px
+	&__phone-link
+		color: #1B1C21
+		font-weight: 900
+		font-size: 24px
+		line-height: 32px
+	&__languages
+		display: flex
+		justify-content: start
+		align-items: center
+	&__lang-item
+		font-size: 16px
+		font-weight: 500
+		line-height: 24px
+		color: #1B1C21
+		padding-right: 8px
+	&__lang-item--active
+		font-size: 16px
+		font-weight: 500
+		line-height: 24px
+		padding-right: 8px
+		color: #7E7E82
+button:hover
+	background: rgba(255, 62, 121, 0.7)
+	transition: 0.5s
