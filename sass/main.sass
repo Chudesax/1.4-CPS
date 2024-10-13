@@ -4,108 +4,91 @@
 body
 	font-family: "TT Lakes", sans-serif, serif
 
-section.sidebar
+.aside
 	width: 320px
 	box-shadow: 15px 0 30px rgba(0, 0, 0, 0.15)
-	/* border: 1px solid black */
-.header
-	padding: 16px
-	&__list
+	&__header
+		padding: 18px 0 46px 24px
+	&__header-wrapper
 		display: flex
-		flex-direction: row
 		justify-content: start
 		align-items: center
-	&__btn
-		display: flex
-		justify-content: center
-		align-items: center
-		width: 40px
-		height: 40px
-		border-radius: 50%
-		@include pink
-	&__list-item:first-child
-		padding-right: 17px
-	&__list-item:nth-child(2)
-		padding-right: 72px
-.navigation
-	padding: 24px
-	&__list
+	&__header-btn
+		@include btn
+		margin-right: 16px
+	&__header-link
+		padding-right: 78px
+	&__nav
+		padding: 0 0 50px 24px
+	&__nav-list
 		display: flex
 		flex-direction: column
 		justify-content: center
 		gap: 32px
 		position: relative
-	&__link
+	&__nav-link
 		color: #1B1C21
 		font-size: 16px
 		font-weight: 500
 		line-height: 24px
 		@include linker
-	&__link--active
+	&__nav-link:hover
 		color: #7E7E82
 		font-size: 16px
 		font-weight: 500
 		line-height: 24px
 		@include linker
-	&__item
+	&__nav-item
 		display: flex
 		justify-content: start
 		align-items: center
-	&__item--active
-		display: flex
-		justify-content: start
-		align-items: center
-	&__item--active:before
+	&__nav-item:hover:before
 		content: ''
 		position: absolute
 		left: -24px
 		display: inline-block
 		vertical-align: center
 		@include divider
-.footer
-	padding: 16px
-	&__list
+	&__feedback
+		padding: 0 0 24px 24px
+	&__feedback-list
 		display: flex
 		flex-direction: row
 		justify-content: start
 		align-items: center
 		padding-bottom: 16px
-	&__btn
-		display: flex
-		justify-content: center
-		align-items: center
-		width: 40px
-		height: 40px
-		border-radius: 50%
-		@include pink
-	&__list-item
+	&__feedback-btn
+		@include btn
+	&__feedback-item
 		padding-right: 16px
-	&__list-item:last-child
+	&__feedback-item:last-child
 		padding-right: 0
 	&__contacts
+		padding-left: 24px
 		padding-bottom: 40px
-	&__mail
+	&__contacts-email
+		display: block
 		font-size: 16px
 		font-weight: 500
 		line-height: 24px
 		color: #1B1C21
 		padding-bottom: 12px
-	&__phone-link
+	&__contacts-phone
 		color: #1B1C21
 		font-weight: 900
 		font-size: 24px
 		line-height: 32px
-	&__languages
-		display: flex
-		justify-content: start
-		align-items: center
-	&__lang-item
+	&__lang
+		padding: 0 0 32px 24px
+	&__lang-list
+		@include fsc
+	&__lang-link
 		font-size: 16px
 		font-weight: 500
 		line-height: 24px
 		color: #1B1C21
 		padding-right: 8px
-	&__lang-item--active
+	&__lang-link--active
 		font-size: 16px
 		font-weight: 500
 		line-height: 24px
