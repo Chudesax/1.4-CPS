@@ -4,18 +4,21 @@
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: "TT Lakes";
   src: url("../fonts/TTLakes-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: "TT Lakes";
   src: url("../fonts/TTLakes-Bold.woff") format("woff");
   font-weight: 900;
   font-style: normal;
 }
+
 body {
   font-family: "TT Lakes", sans-serif, serif;
 }
@@ -24,14 +27,14 @@ body {
   width: 320px;
   box-shadow: 15px 0 30px rgba(0, 0, 0, 0.15);
 }
+
 .aside__header {
-  padding: 18px 0 46px 24px;
-}
-.aside__header-wrapper {
   display: flex;
   justify-content: start;
   align-items: center;
+  padding: 18px 0 46px 24px;
 }
+
 .aside__header-btn {
   background: #FF3E79;
   display: flex;
@@ -42,12 +45,15 @@ body {
   border-radius: 50%;
   margin-right: 16px;
 }
+
 .aside__header-link {
   padding-right: 78px;
 }
+
 .aside__nav {
   padding: 0 0 50px 24px;
 }
+
 .aside__nav-list {
   display: flex;
   flex-direction: column;
@@ -55,6 +61,7 @@ body {
   gap: 32px;
   position: relative;
 }
+
 .aside__nav-link {
   color: #1B1C21;
   font-size: 16px;
@@ -62,6 +69,7 @@ body {
   line-height: 24px;
   text-decoration: none;
 }
+
 .aside__nav-link:hover {
   color: #7E7E82;
   font-size: 16px;
@@ -69,11 +77,13 @@ body {
   line-height: 24px;
   text-decoration: none;
 }
+
 .aside__nav-item {
   display: flex;
   justify-content: start;
   align-items: center;
 }
+
 .aside__nav-item:hover:before {
   content: "";
   position: absolute;
@@ -86,9 +96,11 @@ body {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+
 .aside__feedback {
   padding: 0 0 24px 24px;
 }
+
 .aside__feedback-list {
   display: flex;
   flex-direction: row;
@@ -96,6 +108,7 @@ body {
   align-items: center;
   padding-bottom: 16px;
 }
+
 .aside__feedback-btn {
   background: #FF3E79;
   display: flex;
@@ -105,16 +118,20 @@ body {
   height: 40px;
   border-radius: 50%;
 }
+
 .aside__feedback-item {
   padding-right: 16px;
 }
+
 .aside__feedback-item:last-child {
   padding-right: 0;
 }
+
 .aside__contacts {
   padding-left: 24px;
   padding-bottom: 40px;
 }
+
 .aside__contacts-email {
   display: block;
   font-size: 16px;
@@ -123,20 +140,24 @@ body {
   color: #1B1C21;
   padding-bottom: 12px;
 }
+
 .aside__contacts-phone {
   color: #1B1C21;
   font-weight: 900;
   font-size: 24px;
   line-height: 32px;
 }
+
 .aside__lang {
   padding: 0 0 32px 24px;
 }
+
 .aside__lang-list {
   display: flex;
   justify-content: start;
   align-items: center;
 }
+
 .aside__lang-link {
   font-size: 16px;
   font-weight: 500;
@@ -144,6 +165,7 @@ body {
   color: #1B1C21;
   padding-right: 8px;
 }
+
 .aside__lang-link--active {
   font-size: 16px;
   font-weight: 500;
@@ -155,4 +177,6 @@ body {
 button:hover {
   background: rgba(255, 62, 121, 0.7);
   transition: 0.5s;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
